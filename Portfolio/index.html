@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="style.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji - Student Portfolio </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,400;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1f1f21;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #ffae00;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.05rem;
+            border: 2px solid #1f1f21;
+        }
+
+        .left {
+            font-size: 40px;
+            color: #1f1f21;
+        }
+
+        .left p {
+            color: aliceblue;
+        }
+
+        .firstSection {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px 0;
+            margin: 50px 0;
+        }
+
+        .firstSection>div {
+            width: 100%;
+            height: 550px;
+            /* background-color: aliceblue; */
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin-top: 250px;
+            margin-left: 250px;
+        }
+
+        .rightSection img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            margin-top: 70px;
+        }
+
+        .leftSection h1 {
+            color: #ffae00;
+            font-size: 80px;
+        }
+
+        .leftSection p {
+            color: aliceblue;
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+
+        /* skills */
+
+        .skills {
+            margin-left: 246px;
+            margin-right: 200px;
+
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-item {
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            font-weight: bold;
+        }
+
+        .skill-bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background-color: #ffae00;
+            border-radius: 5px;
+        }
+
+        .skill-header {
+            padding-bottom: 30px;
+        }
+
+
+        .btn {
+            padding: 14px 34px;
+            background: #ffae00;
+            color: #1f1f21;
+            border: 2px solid var(--main-color);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.6s ease-in-out;
+            text-decoration-line: none;
+            margin-top: 20px;
+        }
+
+        .about-tab {
+            height: 100vh;
+        }
+
+        .skill-tab {
+            height: 100vh;
+        }
+
+        .project-tab {
+            height: 100vh;
+        }
+
+        .contact-tab {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about-tab">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <header>
+            <nav>
+                <div class="left">Balaji Portfolio. </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#firstSection">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    <p>Hi, My name is</p>
+                    <h1>Balaji Yadav</h1>
+                    <p>and I am a Engineer</p>
+
+                    <div class="main-btn"></div>
+                    <a href="https://drive.google.com/file/d/127M5-NuUbIri0SeuyusWXSRM2tnGnW4b/view?usp=sharing"
+                        class="btn">Download CV</a>
+                </div>
+                <div class="rightSection">
+                    <img src="bg.png" alt="">
+                </div>
+            </section>
+    </div>
+
+    <!-- skills -->
+    <div class="skill-tab">
+        <section class="skills" id="skills">
+            <h2 class="skill-header">Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-item">
+                    <span class="skill-name">HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">JAVASCCRIPT</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">JAVA</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+        </main>
+    </div>
+
+    <!-- project section -->
+    <div class="project-tab">
+        <div class="container" id="project" style="margin-top: 100px; margin-left: 150px;">
+            <h2 style="margin-bottom: 50px; margin-left: 50px">Projects</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./p3.jpg" class="card-img-top" alt="1">
+                        <div class="card-body">
+                            <p class="card-text" style="color:black"><b>Project 1</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./mj.jpg" class="card-img-top" alt="1">
+                        <div class="card-body">
+                            <p class="card-text" style="color:black;"><b>Project 3</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-1">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./project3.jpeg" class="card-img-top" alt="1">
+                        <div class="card-body">
+                            <p class="card-text" style="color:black;"><b>Project 2</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <div class="contact-tab" id="contact">
+        <!--Section: Contact v.2-->
+        <section class="mb-4" style="margin:80px;">
+
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="" style="margin-left: 50px;">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="" style="margin-left: 50px;">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="" style="margin-left: 20px;">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message" style="margin-left: 20px;">Your message</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary">Send</a>
+                        <!--onclick="document.getElementById('contact-form').submit();" -->
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Pune Maharashtra</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+91 unknown</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>yadavbalaji@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+            </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+    </div>
+</body>
+
+</html>
